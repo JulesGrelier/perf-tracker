@@ -43,7 +43,8 @@ class Measure():
                 "tonnage" : [(array.iloc[:,0] * array.iloc[:,1]).sum()],
                 "nb_reps" : [array.iloc[:,1].sum()],
                 "nb_series" : [nb_series],
-                "exercice" : [ex.value]
+                "exercice" : [ex.value],
+                "min_repos" : [array.iloc[:,2].sum()]
             })
 
 
@@ -65,8 +66,12 @@ class Parser_CSV:
         self.df_clone = pd.read_csv(self.path)
 
 
-    def view_df_clone(self):
+    def print_df_clone(self):
         print(self.df_clone)
+
+
+    def return_df_clone(self) -> pd.DataFrame :
+        return self.df_clone
 
 
     def send(self):
