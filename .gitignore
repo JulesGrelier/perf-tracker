@@ -1,5 +1,8 @@
 __pycache__
 env
-data.csv
+
+main.ipynb
 test.ipynb
+
+data.csv
 todo.txt

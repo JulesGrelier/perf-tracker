@@ -44,6 +44,7 @@ class Visualizer(pd.DataFrame) :
     def dates_after(self, rhs : datetime):
         return Visualizer( self[ rhs.__str__() : datetime.today().__str__() ] )
 
+
     def n_days_ago(self, n : int):
         target_date = datetime.today() - timedelta(days = n)
         return self.dates_after(target_date.date())
