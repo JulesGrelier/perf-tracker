@@ -1,5 +1,5 @@
 from visualizer import Visualizer, datetime, Unit
-from parser import Parser_CSV, Measure, Ex
+from measure import Ex, measure_to_str, freeze_measure
 import matplotlib.pyplot as plt
 
 path = "./data.csv"

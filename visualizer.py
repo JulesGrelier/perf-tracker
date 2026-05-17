@@ -2,7 +2,7 @@ from enum import Enum, auto
 from datetime import datetime, timedelta
 import pandas as pd
 
-from parser import Ex
+from measure import Ex
 
 
 class Unit(Enum):
